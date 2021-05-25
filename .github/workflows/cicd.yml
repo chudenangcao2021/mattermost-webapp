@@ -40,4 +40,4 @@ jobs:
         script: |
           cd ${{ env.PROJECT_PATH }}
           git pull origin master
-          make run
+          npm run build
