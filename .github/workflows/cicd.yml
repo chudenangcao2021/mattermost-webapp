@@ -1,0 +1,43 @@
+name: CICD
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  PROJECT_PATH: ~/cdnc/mattermost-webapp
+
+jobs:
+  test:
+    name: 'Run Test'
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Git checkout
+      uses: actions/checkout@v2
+
+    - name: Setup NodeJS
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - run: make test
+  
+  deploy:
+    name: 'Update Server'
+    needs: [test]
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: SSH and deploy in server
+      uses: appleboy/ssh-action@master
+      with:
+        HOST: ${{ secrets.SSH_HOST }}
+        USERNAME: ${{ secrets.SSH_USERNAME }}
+        KEY: ${{ secrets.SSH_KEY }}
+        PORT: ${{ secrets.SSH_PORT }}
+        script: |
+          cd ${{ env.PROJECT_PATH }}
+          git pull origin master
+          make run
