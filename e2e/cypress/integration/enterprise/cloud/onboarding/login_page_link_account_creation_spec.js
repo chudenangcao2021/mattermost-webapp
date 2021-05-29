@@ -69,7 +69,7 @@ describe('Onboarding', () => {
         cy.visit(`/${testTeam.name}`);
 
         // # Attempt to create a new account
-        cy.get('#login_section', {timeout: TIMEOUTS.ONE_MIN}).should('be.visible').click();
+        cy.get('#login_section_1', {timeout: TIMEOUTS.ONE_MIN}).should('be.visible').click();
         cy.get('#signup').should('be.visible').click();
         cy.get('#email').should('be.focused').and('be.visible').type(email);
         cy.get('#name').should('be.visible').type(username);

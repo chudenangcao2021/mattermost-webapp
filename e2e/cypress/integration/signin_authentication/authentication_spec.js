@@ -173,6 +173,6 @@ describe('Authentication', () => {
         });
 
         // * Login page shows a message above the login box that the session has expired.
-        cy.get('#login_section .alert-warning', {timeout: timeouts.ONE_MIN}).should('contain.text', 'Your session has expired. Please log in again.');
+        cy.get('#login_section_1 .alert-warning', {timeout: timeouts.ONE_MIN}).should('contain.text', 'Your session has expired. Please log in again.');
     });
 });

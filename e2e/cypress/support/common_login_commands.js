@@ -18,7 +18,7 @@ Cypress.Commands.add('checkLoginPage', (settings = {}) => {
 });
 
 Cypress.Commands.add('checkLoginFailed', () => {
-    cy.get('#login_section', {timeout: TIMEOUTS.ONE_MIN}).find('.form-group').should('have.class', 'has-error');
+    cy.get('#login_section_1', {timeout: TIMEOUTS.ONE_MIN}).find('.form-group').should('have.class', 'has-error');
 });
 
 Cypress.Commands.add('checkGuestNoChannels', () => {

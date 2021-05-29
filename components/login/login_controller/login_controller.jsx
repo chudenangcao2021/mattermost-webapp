@@ -856,7 +856,7 @@ class LoginController extends React.PureComponent {
                 <AnnouncementBar/>
                 {backButton}
                 <div
-                    id='login_section'
+                    id='login_section_1'
                     className='col-sm-12'
                 >
                     <div className={'signup-team__container ' + customClass}>
