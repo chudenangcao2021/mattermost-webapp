@@ -33,7 +33,7 @@ export default class EmailToOAuth extends React.PureComponent {
 
         var password = this.passwordInput.current.value;
         if (!password) {
-            state.error = Utils.localizeMessage('claim.email_to_oauth.pwdError', 'Please enter your password.');
+            state.error = Utils.localizeMessage('claim.email_to_oauth.pwdError', 'Katalon Testing - Please enter your password.');
             this.setState(state);
             return;
         }

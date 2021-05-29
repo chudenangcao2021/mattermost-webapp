@@ -254,7 +254,7 @@ class LoginController extends React.PureComponent {
                 serverError: (
                     <FormattedMessage
                         id='login.noPassword'
-                        defaultMessage='Please enter your password'
+                        defaultMessage='Katalon Testing - Please enter your password'
                     />
                 ),
             });

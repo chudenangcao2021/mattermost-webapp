@@ -109,7 +109,7 @@ describe('Onboarding', () => {
             cy.get('#loginId').should('have.value', email);
             cy.get('#loginPassword').should('be.visible').type(password);
             cy.get('#loginButton').click();
-            cy.findByText('Enter a valid email or username and/or password.').should('not.exist');
+            cy.findByText('Katalon Testing - Enter a valid email or username and/or password.').should('not.exist');
         });
 
         // * Check that the display name of the team the user successfully joined is correct

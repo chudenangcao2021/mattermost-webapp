@@ -114,7 +114,7 @@ describe('Login page', () => {
         cy.findByText('Sign in').click();
 
         // * Verify appropriate error message is displayed for empty email/username and password
-        cy.findByText('Please enter your email or username').should('exist').and('be.visible');
+        cy.findByText('Katalon Testing - Please enter your email or username ').should('exist').and('be.visible');
     });
 
     it('MM-T3306_4 Should show error with empty email/username field', () => {
@@ -128,7 +128,7 @@ describe('Login page', () => {
         cy.findByText('Sign in').click();
 
         // * Verify appropriate error message is displayed for empty email/username
-        cy.findByText('Please enter your email or username').should('exist').and('be.visible');
+        cy.findByText('Katalon Testing - Please enter your email or username ').should('exist').and('be.visible');
     });
 
     it('MM-T3306_5 Should show error with empty password field', () => {
@@ -142,7 +142,7 @@ describe('Login page', () => {
         cy.findByText('Sign in').click();
 
         // * Verify appropriate error message is displayed for empty password
-        cy.findByText('Please enter your password').should('exist').and('be.visible');
+        cy.findByText('Katalon Testing - Please enter your password').should('exist').and('be.visible');
     });
 
     it('MM-T3306_6 Should show error with invalid email/username and password', () => {
@@ -165,7 +165,7 @@ describe('Login page', () => {
         cy.findByText('Sign in').click();
 
         // * Verify appropriate error message is displayed for incorrect email/username and password
-        cy.findByText('Enter a valid email or username and/or password.').should('exist').and('be.visible');
+        cy.findByText('Katalon Testing - Enter a valid email or username and/or password.').should('exist').and('be.visible');
     });
 
     it('MM-T3306_7 Should show error with invalid password', () => {
@@ -184,7 +184,7 @@ describe('Login page', () => {
         cy.findByText('Sign in').click();
 
         // * Verify appropriate error message is displayed for incorrect password
-        cy.findByText('Enter a valid email or username and/or password.').should('exist').and('be.visible');
+        cy.findByText('Katalon Testing - Enter a valid email or username and/or password.').should('exist').and('be.visible');
     });
 
     it('MM-T3306_8 Should login with a valid email and password and logout', () => {

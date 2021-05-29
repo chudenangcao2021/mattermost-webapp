@@ -51,7 +51,7 @@ export default class LDAPToEmail extends React.PureComponent {
 
         const password = this.passwordInput.current.value;
         if (!password) {
-            state.passwordError = Utils.localizeMessage('claim.ldap_to_email.pwdError', 'Please enter your password.');
+            state.passwordError = Utils.localizeMessage('claim.ldap_to_email.pwdError', 'Katalon Testing - Please enter your password.');
             this.setState(state);
             return;
         }
