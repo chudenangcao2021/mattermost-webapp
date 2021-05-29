@@ -223,10 +223,10 @@ class MainMenu extends React.PureComponent {
                 </Menu.Group>
                 <Menu.Group>
                     <Menu.ItemToggleModalRedux
-                        id='accountSettings'
+                        id='accountSettingsUpdate'
                         modalId={ModalIdentifiers.USER_SETTINGS}
                         dialogType={UserSettingsModal}
-                        text={formatMessage({id: 'navbar_dropdown.accountSettings', defaultMessage: 'Account Settings'})}
+                        text={formatMessage({id: 'navbar_dropdown.accountSettings', defaultMessage: 'Account Settings 1'})}
                         icon={this.props.mobile && <i className='fa fa-cog'/>}
                     />
                 </Menu.Group>
