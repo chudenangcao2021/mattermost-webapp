@@ -38,7 +38,7 @@ describe('Cookie with Subpath', () => {
                 }
 
                 // * Check login page is loaded
-                cy.get('#login_section_1').should('be.visible');
+                cy.get('#login_section').should('be.visible');
 
                 // # Login as testUser
                 cy.get('#loginId').should('be.visible').type(testUser.username);

@@ -205,7 +205,7 @@ describe('Account Settings -> General -> Email', () => {
             cy.visit(permalink);
 
             // * Verify login text
-            cy.get('#login_section_1 .alert-success').should('contain.text', 'Email Verified');
+            cy.get('#login_section .alert-success').should('contain.text', 'Email Verified');
 
             // # Do login
             cy.get('#loginId').should('be.visible').clear().type(email);

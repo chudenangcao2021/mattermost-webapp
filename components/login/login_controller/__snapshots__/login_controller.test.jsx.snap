@@ -5,7 +5,7 @@ exports[`components/login/LoginController should match snapshot 1`] = `
   <Connect(AnnouncementBarController) />
   <div
     className="col-sm-12"
-    id="login_section_1"
+    id="login_section"
   >
     <div
       className="signup-team__container undefined"
@@ -49,7 +49,7 @@ exports[`components/login/LoginController should match snapshot when expired 1`]
   <Connect(AnnouncementBarController) />
   <div
     className="col-sm-12"
-    id="login_section_1"
+    id="login_section"
   >
     <div
       className="signup-team__container undefined"
@@ -122,7 +122,7 @@ exports[`components/login/LoginController should show session expiry notificatio
   <Connect(AnnouncementBarController) />
   <div
     className="col-sm-12"
-    id="login_section_1"
+    id="login_section"
   >
     <div
       className="signup-team__container undefined"
@@ -188,7 +188,7 @@ exports[`components/login/LoginController should suppress session expiry notific
   <Connect(AnnouncementBarController) />
   <div
     className="col-sm-12"
-    id="login_section_1"
+    id="login_section"
   >
     <div
       className="signup-team__container undefined"

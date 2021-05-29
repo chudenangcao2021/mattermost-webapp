@@ -61,7 +61,7 @@ describe('Login page', () => {
             parent().should('have.attr', 'href', '/signup_user_complete');
 
         // * Check if site name is visible on top of login section
-        cy.get('#login_section_1').within(() => {
+        cy.get('#login_section').within(() => {
             cy.findByText(config.TeamSettings.SiteName).should('exist').and('be.visible');
         });
 

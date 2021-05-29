@@ -606,6 +606,22 @@ class LoginController extends React.PureComponent {
                                     />
                                 </LoadingWrapper>
                             </button>
+                            <button
+                                id='loginButton2'
+                                type='submit'
+                                className='btn btn-primary'
+                            >
+                                <LoadingWrapper
+                                    id='login_button_signing2'
+                                    loading={this.state.loading}
+                                    text={Utils.localizeMessage('login.signInLoading', 'Test loading in...')}
+                                >
+                                    <FormattedMessage
+                                        id='login.signIn2'
+                                        defaultMessage='Button test'
+                                    />
+                                </LoadingWrapper>
+                            </button>
                         </div>
                     </div>
                 </form>,
@@ -856,7 +872,7 @@ class LoginController extends React.PureComponent {
                 <AnnouncementBar/>
                 {backButton}
                 <div
-                    id='login_section_1'
+                    id='login_section'
                     className='col-sm-12'
                 >
                     <div className={'signup-team__container ' + customClass}>
