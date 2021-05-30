@@ -212,13 +212,6 @@ class MainMenu extends React.PureComponent {
                 
                 <Menu.Group>
                     <Menu.ItemAction
-                        id='action-test-i13'
-                        show={this.props.mobile}
-                        onClick={this.searchMentions}
-                        icon={this.props.mobile && <i className='mentions'>{'@'}</i>}
-                        text={formatMessage({id: 'sidebar_right_menu.test', defaultMessage: 'Hành động kiểm thử Iteration 13'})}
-                    />
-                    <Menu.ItemAction
                         id='recentMentions'
                         show={this.props.mobile}
                         onClick={this.searchMentions}
@@ -240,6 +233,12 @@ class MainMenu extends React.PureComponent {
                         dialogType={UserSettingsModal}
                         text={formatMessage({id: 'navbar_dropdown.accountSettings', defaultMessage: 'Account Settings'})}
                         icon={this.props.mobile && <i className='fa fa-cog'/>}
+                    />
+                    <Menu.ItemAction
+                        id='action-test-i13'
+                        show={this.props.mobile}
+                        onClick={this.searchMentions}
+                        text={formatMessage({id: 'sidebar_right_menu.test', defaultMessage: 'Hành động kiểm thử Iteration 13'})}
                     />
                 </Menu.Group>
                 <Menu.Group>
