@@ -113,6 +113,14 @@ class UserGuideDropdown extends React.PureComponent<Props, State> {
                     >
                         <UserGuideIcon className='icon'/>
                     </button>
+                    <button
+                        id='channelHeaderUserGuideButton2'
+                        className={classNames('channel-header__icon', {'channel-header__icon--active': this.state.buttonActive})}
+                        type='button'
+                        aria-expanded='true'
+                    >
+                        <UserGuideIcon className='icon'/>
+                    </button>
                 </OverlayTrigger>
                 <Menu
                     openLeft={true}
