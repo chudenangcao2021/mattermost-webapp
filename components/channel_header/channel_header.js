@@ -700,7 +700,7 @@ class ChannelHeader extends React.PureComponent {
                             >
                                 <span>
                                     {archivedIcon}
-                                    {channelTitle}
+                                    Iteration 10 - {channelTitle}
                                     {sharedIcon}
                                 </span>
                             </strong>
