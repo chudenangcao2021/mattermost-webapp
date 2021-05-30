@@ -392,6 +392,12 @@ class MainMenu extends React.PureComponent {
                         onClick={this.toggleShortcutsModal}
                         text={formatMessage({id: 'navbar_dropdown.keyboardShortcuts', defaultMessage: 'Keyboard Shortcuts'})}
                     />
+                    <Menu.ItemAction
+                        id='keyboardShortcutsClone'
+                        show={!this.props.mobile}
+                        onClick={this.toggleShortcutsModal}
+                        text={formatMessage({id: 'navbar_dropdown.keyboardShortcuts', defaultMessage: 'Keyboard Shortcuts'})}
+                    />
                     <Menu.ItemExternalLink
                         id='reportLink'
                         show={Boolean(this.props.reportAProblemLink)}
