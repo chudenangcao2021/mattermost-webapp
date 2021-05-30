@@ -175,6 +175,7 @@ export default class Sidebar extends React.PureComponent<Props, State> {
                 })}
             >
                 <SidebarHeader/>
+                <SidebarHeader/>
                 <div
                     id='lhsNavigator'
                     role='application'
