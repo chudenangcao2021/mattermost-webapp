@@ -667,6 +667,14 @@ class LoginController extends React.PureComponent {
                             defaultMessage='I forgot my password.'
                         />
                     </Link>
+
+
+                    <Link to={'/#'}>
+                        <FormattedMessage
+                            id='login.forgot.other'
+                            defaultMessage=' Liên kết mới.'
+                        />
+                    </Link>
                 </div>,
             );
         }
