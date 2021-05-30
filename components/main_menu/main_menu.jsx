@@ -206,6 +206,10 @@ class MainMenu extends React.PureComponent {
                         
                     </Menu.Group>
                 }
+  
+    
+                   
+                
                 <Menu.Group>
                     <Menu.ItemAction
                         id='action-test-i13'
@@ -214,9 +218,6 @@ class MainMenu extends React.PureComponent {
                         icon={this.props.mobile && <i className='mentions'>{'@'}</i>}
                         text={formatMessage({id: 'sidebar_right_menu.test', defaultMessage: 'Hành động kiểm thử Iteration 13'})}
                     />
-                   
-                </Menu.Group>
-                <Menu.Group>
                     <Menu.ItemAction
                         id='recentMentions'
                         show={this.props.mobile}
