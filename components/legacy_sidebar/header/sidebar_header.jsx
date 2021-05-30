@@ -48,6 +48,7 @@ export default class SidebarHeader extends React.PureComponent {
                     <SidebarHeaderDropdown/>
                 </div>
             </div>
+            
         );
     }
 }
