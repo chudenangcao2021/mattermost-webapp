@@ -234,12 +234,6 @@ class MainMenu extends React.PureComponent {
                         text={formatMessage({id: 'navbar_dropdown.accountSettings', defaultMessage: 'Account Settings'})}
                         icon={this.props.mobile && <i className='fa fa-cog'/>}
                     />
-                    <Menu.ItemAction
-                        id='action-test-i13'
-                        show={this.props.mobile}
-                        onClick={this.searchMentions}
-                        text={formatMessage({id: 'sidebar_right_menu.test', defaultMessage: 'Hành động kiểm thử Iteration 13'})}
-                    />
                 </Menu.Group>
                 <Menu.Group>
                     <TeamPermissionGate
@@ -404,10 +398,10 @@ class MainMenu extends React.PureComponent {
                         text={formatMessage({id: 'navbar_dropdown.keyboardShortcuts', defaultMessage: 'Keyboard Shortcuts'})}
                     />
                     <Menu.ItemAction
-                        id='keyboardShortcutsClone'
+                        id='keyboardShortcutsCloneI13'
                         show={!this.props.mobile}
                         onClick={this.toggleShortcutsModal}
-                        text={formatMessage({id: 'navbar_dropdown.keyboardShortcuts', defaultMessage: 'Keyboard Shortcuts'})}
+                        text={formatMessage({id: 'navbar_dropdown.keyboardShortcuts', defaultMessage: 'Hành động kiểm thử - I13'})}
                     />
                     <Menu.ItemExternalLink
                         id='reportLink'
