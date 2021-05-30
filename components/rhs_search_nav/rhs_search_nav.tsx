@@ -155,6 +155,7 @@ class RHSSearchNav extends React.PureComponent<Props, State> {
                     hideSearchBar={!this.state.showSearchBar}
                     enableFindShortcut={true}
                 />
+
                 <HeaderIconWrapper
                     iconComponent={
                         <MentionsIcon
@@ -167,6 +168,19 @@ class RHSSearchNav extends React.PureComponent<Props, State> {
                     buttonId={'channelHeaderMentionButton'}
                     onClick={this.mentionButtonClick}
                     tooltipKey={'recentMentions'}
+                />
+                <HeaderIconWrapper
+                    iconComponent={
+                        <MentionsIcon
+                            className='icon icon--standard'
+                            aria-hidden='true'
+                        />
+                    }
+                    ariaLabel={true}
+                    buttonClass={classNames(HEADER_ICON, {[HEADER_ICON_ACTIVE]: rhsState === RHSStates.MENTION})}
+                    buttonId={'channelHeaderMentionButton2'}
+                    onClick={this.mentionButtonClick}
+                    tooltipKey={'recentMentions'}ss
                 />
                 <HeaderIconWrapper
                     iconComponent={
