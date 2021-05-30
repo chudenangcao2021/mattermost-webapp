@@ -601,6 +601,27 @@ class FileUpload extends PureComponent {
                     >
                         <AttachmentIcon className='d-flex'/>
                     </button>
+                    <button
+                        type='button'
+                        id='fileUploadButton'
+                        aria-label={ariaLabel}
+                        className='style--none post-action icon icon--attachment'
+                        onClick={this.simulateInputClick}
+                        onTouchEnd={this.simulateInputClick}
+                    >
+                        <AttachmentIcon className='d-flex'/>
+                    </button>
+                    <input
+                        id='fileUploadInput'
+                        tabIndex='-1'
+                        aria-label={formatMessage(holders.uploadFile)}
+                        ref={this.fileInput}
+                        type='file'
+                        onChange={this.handleChange}
+                        onClick={this.handleLocalFileUploaded}
+                        multiple={multiple}
+                        accept={accept}
+                    />
                     <input
                         id='fileUploadInput'
                         tabIndex='-1'
@@ -649,6 +670,18 @@ class FileUpload extends PureComponent {
                         accept={accept}
                     />
                     <MenuWrapper>
+                        <button
+                            type='button'
+                            aria-label={ariaLabel}
+                            className='style--none post-action'
+                        >
+                            <div
+                                id='fileUploadButton'
+                                className='icon icon--attachment'
+                            >
+                                <AttachmentIcon className='d-flex'/>
+                            </div>
+                        </button>
                         <button
                             type='button'
                             aria-label={ariaLabel}
